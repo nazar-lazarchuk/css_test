@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+    color: #333;
+}
+
+body {
+    background-color: #eee;
+}
+
+main {
+    max-width: 520px;
+    width: 100%;
+    margin: 30px auto;
+
+    background-color: white;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button, input {
+    font-family: inherit;
+    color: inherit;
+}
+
+h1 {
+    font-size: 24px;
+}
+p {
+    font-size: 14px;
+}
+h1, p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+form {
+    margin-top: 30px;
+    position: relative;
+}
+form::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+input[type="text"] {
+    display: block;
+    width: 50%;
+    min-width: 100px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+input[type="text"]:focus {
+    outline-color: rgb(133, 149, 238);
+}
+input[type="text"]::placeholder {
+    color: rgb(133, 149, 238);
+    opacity: 0.6;
+}
+input[type="text"]:focus::placeholder {
+    opacity: 1;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0.5em;
+}
+
+input[type="radio"]:checked + span {
+    color: rgb(133, 149, 238);
+}
+
+input[type="radio"] {
+    width: 0;
+    height: 0;
+    margin-right: 30px;
+    vertical-align: top;
+}
+input[type="radio"]::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+input[type="radio"]:checked::before {
+    border-color: rgb(133, 149, 238);
+    background: white;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 150px;
+    height: 26px;
+    margin-top: 10px;
+    margin-left: auto;
+    background: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    border-color: rgb(133, 149, 238);
+    color: rgb(133, 149, 238);
+}
+
+.danger {
+    color: red;
+}
+.warning {
+    color: yellow;
+}
+.success {
+    color: green;
+}
